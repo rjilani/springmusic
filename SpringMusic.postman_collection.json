@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "96aab3db-a4d1-4d61-92b2-252eb973f9ab",
+		"name": "SpringMusic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "GetNirvana",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/albums/6b1c4ee5-c37e-4e2f-a960-59ff3865fc96",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"albums",
+								"6b1c4ee5-c37e-4e2f-a960-59ff3865fc96"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBeachBoys",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/albums/c3c45c89-8b08-40c5-87d0-95bc8f71dfbe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"albums",
+								"c3c45c89-8b08-40c5-87d0-95bc8f71dfbe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAlbums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "updatebeachboysid",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"c3c45c89-8b08-40c5-87d0-95bc8f71dfbe\",\r\n    \"title\": \"Pet Sounds\",\r\n    \"artist\": \"The Beach Boys\",\r\n    \"releaseYear\": \"1966\",\r\n    \"genre\": \"Rock\",\r\n    \"trackCount\": 0,\r\n    \"albumId\": \"1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "createpinkfloyd",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Wall\",\r\n    \"artist\": \"Pink Floyd\",\r\n    \"releaseYear\": \"1990\",\r\n    \"genre\": \"Rock\",\r\n    \"trackCount\": 0,\r\n    \"albumId\": \"1\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/albums/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"albums",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
